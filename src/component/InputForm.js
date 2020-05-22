@@ -7,11 +7,11 @@ const InputForm = (props) => {
             <div className="row">
                 <label>Write To-Do</label>
                 <input value={props.inputValue} onChange={props.onChangeInput} onKeyPress={props.onKeyPress} ref={props.inputRef} style={{width: 30 + 'vw'}}/>
-                <button className='addList' onClick={props.onClickAdd}>추가</button>
+                <button className='addList' onClick={props.onClickAdd}>add</button>
             </div>
             <p>
                 <input type="checkbox" checked={props.isDone} onChange={props.onChangeCheck}/>{' '}
-                완료된 목록 숨기기
+                Hide completed list
             </p>
         </div>
     );

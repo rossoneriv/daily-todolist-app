@@ -9,7 +9,7 @@ const TodoList = memo((props) => {
             <td className='delCol'><button className='delList' onClick={(e) => {
                     e.stopPropagation();
                     props.onClickDel(todo.id)}
-            }>삭제</button></td>
+            }>del</button></td>
         </tr>
     )) : <tr></tr>;
 
